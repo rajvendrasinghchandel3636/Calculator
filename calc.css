@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+.calc{
+    background-color: grey;
+    max-width: 25%;
+    margin: auto;
+    margin-top: 10%;
+    border: 5px solid rgb(19, 105, 108) ;
+    border-radius: 15px;
+    height: 70vh;
+}
+#txt{
+    font-size: x-large;
+    height: 50px;
+    margin-top: 10%;
+    width: 100%;
+    box-shadow: 0 0 10px rgb(4, 90, 99);
+}
+.btncont{
+    margin-left: 8%;
+    width: 100%;
+    margin-top: 5px;
+    line-height: 5;
+    
+    
+
+
+}
+
+.operator{
+    width: 4rem;
+    height: 4rem;
+    font-size: larger;
+    background-color:cornflowerblue;
+    color: black;
+    border-radius: 10px;
+ 
+}
+.number{
+    width: 4rem;
+    height: 4rem;
+    font-size: large;
+    background-color:cadetblue;
+    color: black;
+    border-radius: 10px;
+    
+}
+.clear{
+    width: 4rem;
+    height: 4rem;
+    font-size: large;
+    background-color: black;
+    color: white;
+   border-radius: 10px;
+
+}
+
+.clear:hover{
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+}
+.operator:hover{
+    
+    color: white;
+    cursor: pointer;
+    background-color:rgb(19, 63, 145);
+}
+.number:hover{
+    
+    color: white;
+    cursor: pointer;
+    background-color:rgb(19, 105, 108);
+    
+}
+.equal{
+    width: 4rem;
+    height: 4rem;
+    font-size: larger;
+    background-color:crimson;
+    color: white;
+    border-radius: 10px;
+ 
+}
+.equal:hover{
+    
+    color: white;
+    cursor: pointer;
+    background-color:black;
+    
+}
+
+/* For small screens (mobile devices) */
+@media (max-width: 768px) {
+    .calc {
+        max-width: 90%;
+        height: auto;
+        margin-top: 5%;
+    }
+
+    #txt {
+        font-size: large;
+        height: 40px;
+    }
+
+    .btncont {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    .operator, .number, .clear, .equal {
+        height: 3.5rem;
+        font-size: medium;
+    }
+}
+
+/* For very small screens (extra small devices) */
+@media (max-width: 480px) {
+    .calc {
+        max-width: 95%;
+        margin-top: 3%;
+    }
+
+    #txt {
+        font-size: medium;
+        height: 35px;
+    }
+
+    .btncont {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+
+    .operator, .number, .clear, .equal {
+        height: 3rem;
+        font-size: small;
+    }
+}
+
+/* For larger tablets and small laptops */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .calc {
+        max-width: 50%;
+        height: auto;
+        margin-top: 8%;
+    }
+
+    #txt {
+        font-size: large;
+    }
+
+    .btncont {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .operator, .number, .clear, .equal {
+        height: 4rem;
+        font-size: large;
+    }
+}
